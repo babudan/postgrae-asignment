@@ -74,11 +74,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8000/booking_retreat/retreat/?title=General Fitness Yoga Camp&location=Kolkata&price=350&description=A 3-day yoga camp to enhance overall fitness and well-being.&date=1695168000&type=Standalone&condition=General Fitness&image=https://cdn.midjourney.com/5d5f32ef-c40a-4258-9856-85db2f4f943a/0_0.jpeg&tag=fitness&duration=3&page=2&limit=2&search=flexibility",
+					"raw": "https://postgrae-asignment.vercel.app/booking_retreat/retreat/",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"postgrae-asignment",
+						"vercel",
+						"app"
 					],
-					"port": "8000",
 					"path": [
 						"booking_retreat",
 						"retreat",
@@ -87,55 +89,68 @@
 					"query": [
 						{
 							"key": "title",
-							"value": "General Fitness Yoga Camp"
+							"value": "General Fitness Yoga Camp",
+							"disabled": true
 						},
 						{
 							"key": "location",
-							"value": "Kolkata"
+							"value": "Kolkata",
+							"disabled": true
 						},
 						{
 							"key": "price",
-							"value": "350"
+							"value": "350",
+							"disabled": true
 						},
 						{
 							"key": "description",
-							"value": "A 3-day yoga camp to enhance overall fitness and well-being."
+							"value": "A 3-day yoga camp to enhance overall fitness and well-being.",
+							"disabled": true
 						},
 						{
 							"key": "date",
-							"value": "1695168000"
+							"value": "1695168000",
+							"disabled": true
 						},
 						{
 							"key": "type",
-							"value": "Standalone"
+							"value": "Standalone",
+							"disabled": true
 						},
 						{
 							"key": "condition",
-							"value": "General Fitness"
+							"value": "General Fitness",
+							"disabled": true
 						},
 						{
 							"key": "image",
-							"value": "https://cdn.midjourney.com/5d5f32ef-c40a-4258-9856-85db2f4f943a/0_0.jpeg"
+							"value": "https://cdn.midjourney.com/5d5f32ef-c40a-4258-9856-85db2f4f943a/0_0.jpeg",
+							"disabled": true
 						},
 						{
 							"key": "tag",
-							"value": "fitness"
+							"value": "fitness",
+							"disabled": true
 						},
 						{
 							"key": "duration",
-							"value": "3"
+							"value": "3",
+							"disabled": true
 						},
 						{
 							"key": "page",
-							"value": "2"
+							"value": "2",
+							"disabled": true
 						},
 						{
 							"key": "limit",
-							"value": "2"
+							"value": "2",
+							"disabled": true
 						},
 						{
 							"key": "search",
-							"value": "flexibility"
+							"value": "flexibility",
+							"disabled": true
 						}
 					]
 				}
