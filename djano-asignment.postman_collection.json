@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "87202de5-ab40-49d0-9500-a8533fb6c4c3",
+		"name": "djano-asignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30852023"
+	},
+	"item": [
+		{
+			"name": "Booking_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\" : 2,\r\n    \"user_name\" : \"arin\",\r\n    \"user_email\" : \"arindam@gmail.com\",\r\n    \"user_phone\" : \"0303k303k3\",\r\n    \"retreat_id\" : 3,\r\n    \"retreat_title\" : \"testing\",\r\n    \"retreat_location\" : \"durgapur\",\r\n    \"retreat_price\" : \"0404\",\r\n    \"retreat_duration\" : 4,\r\n    \"payment_details\" : \"940403\",\r\n    \"booking_date\" : \"2024/05/06\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://postgrae-asignment.vercel.app/booking_retreat/bookings/",
+					"protocol": "https",
+					"host": [
+						"postgrae-asignment",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"booking_retreat",
+						"bookings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retreat_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"title\": \"Yoga for Stress Relief\",\r\n    \"description\": \"A weekend retreat focused on yoga and meditation to relieve stress.\",\r\n    \"date\": 1692921600,\r\n    \"location\": \"Goa\",\r\n    \"price\": 200,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Stress Relief\",\r\n    \"image\": \"https://cdn.midjourney.com/a287f9bc-d0fb-4e78-a0fa-e8136d3c408a/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"relaxation\",\r\n      \"meditation\",\r\n      \"weekend\"\r\n    ],\r\n    \"duration\": 3\r\n  },\r\n  {\r\n    \"title\": \"Flexibility Improvement Workshop\",\r\n    \"description\": \"A 5-day workshop designed to improve flexibility through yoga.\",\r\n    \"date\": 1694304000,\r\n    \"location\": \"Rishikesh\",\r\n    \"price\": 500,\r\n    \"type\": \"Standalone\",\r\n    \"condition\": \"Flexibility Improvement\",\r\n    \"image\": \"https://cdn.midjourney.com/4eef5d57-1601-4b80-8e82-523003e9f95d/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"flexibility\",\r\n      \"yoga\",\r\n      \"workshop\"\r\n    ],\r\n    \"duration\": 5\r\n  },\r\n  {\r\n    \"title\": \"Weight Loss Retreat\",\r\n    \"description\": \"A 7-day retreat focused on weight loss through yoga and diet.\",\r\n    \"date\": 1696118400,\r\n    \"location\": \"Kerala\",\r\n    \"price\": 700,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Weight Loss\",\r\n    \"image\": \"https://cdn.midjourney.com/bc82ebc6-a3a4-4eda-be0b-bb3e65d4b8d3/0_1.jpeg\",\r\n    \"tag\": [\r\n      \"weight loss\",\r\n      \"diet\",\r\n      \"yoga\"\r\n    ],\r\n    \"duration\": 7\r\n  },\r\n  {\r\n    \"title\": \"General Fitness Yoga Camp\",\r\n    \"description\": \"A 3-day yoga camp to enhance overall fitness and well-being.\",\r\n    \"date\": 1694736000,\r\n    \"location\": \"Mumbai\",\r\n    \"price\": 300,\r\n    \"type\": \"Standalone\",\r\n    \"condition\": \"General Fitness\",\r\n    \"image\": \"https://cdn.midjourney.com/930ec767-aa6d-46e6-92a6-f019a9718304/0_3.jpeg\",\r\n    \"tag\": [\r\n      \"fitness\",\r\n      \"yoga\",\r\n      \"camp\"\r\n    ],\r\n    \"duration\": 3\r\n  },\r\n  {\r\n    \"title\": \"Chronic Pain Management\",\r\n    \"description\": \"A weekend retreat to manage chronic pain through specialized yoga techniques.\",\r\n    \"date\": 1700438400,\r\n    \"location\": \"Delhi\",\r\n    \"price\": 250,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Chronic Pain Management\",\r\n    \"image\": \"https://cdn.midjourney.com/5b0cec06-2f37-4828-8602-316f6dbd0eb6/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"pain management\",\r\n      \"yoga\",\r\n      \"weekend\"\r\n    ],\r\n    \"duration\": 2\r\n  },\r\n  {\r\n    \"title\": \"Mental Wellness Retreat\",\r\n    \"description\": \"A 4-day retreat focused on mental wellness through yoga and meditation.\",\r\n    \"date\": 1701734400,\r\n    \"location\": \"Pune\",\r\n    \"price\": 400,\r\n    \"type\": \"Standalone\",\r\n    \"condition\": \"Mental Wellness\",\r\n    \"image\": \"https://cdn.midjourney.com/32923aeb-db8c-4c27-8e9d-fb82928b7fc1/0_2.jpeg\",\r\n    \"tag\": [\r\n      \"mental wellness\",\r\n      \"meditation\",\r\n      \"yoga\"\r\n    ],\r\n    \"duration\": 4\r\n  },\r\n  {\r\n    \"title\": \"Pre/Post-Natal Yoga\",\r\n    \"description\": \"A specialized yoga program for pre and post-natal women.\",\r\n    \"date\": 1693872000,\r\n    \"location\": \"Chennai\",\r\n    \"price\": 350,\r\n    \"type\": \"Standalone\",\r\n    \"condition\": \"Pre/Post-Natal\",\r\n    \"image\": \"https://cdn.midjourney.com/1bf1a655-289a-48e4-a156-0dde0cf1b7ce/0_1.jpeg\",\r\n    \"tag\": [\r\n      \"pre-natal\",\r\n      \"post-natal\",\r\n      \"yoga\"\r\n    ],\r\n    \"duration\": 3\r\n  },\r\n  {\r\n    \"title\": \"Detox Retreat\",\r\n    \"description\": \"A 5-day detox retreat to cleanse the body and mind.\",\r\n    \"date\": 1699574400,\r\n    \"location\": \"Hyderabad\",\r\n    \"price\": 550,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Detox\",\r\n    \"image\": \"https://cdn.midjourney.com/873b60f7-f026-40f9-b2d7-184e981ee1f5/0_3.jpeg\",\r\n    \"tag\": [\r\n      \"detox\",\r\n      \"cleanse\",\r\n      \"yoga\"\r\n    ],\r\n    \"duration\": 5\r\n  },\r\n  {\r\n    \"title\": \"Spiritual Growth Retreat\",\r\n    \"description\": \"A 7-day retreat focusing on spiritual growth through yoga and meditation.\",\r\n    \"date\": 1702598400,\r\n    \"location\": \"Varanasi\",\r\n    \"price\": 800,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Spiritual Growth\",\r\n    \"image\": \"https://cdn.midjourney.com/e0dba42d-84bc-45e6-acca-bbaf8f817371/0_1.jpeg\",\r\n    \"tag\": [\r\n      \"spiritual growth\",\r\n      \"meditation\",\r\n      \"yoga\"\r\n    ],\r\n    \"duration\": 7\r\n  },\r\n  {\r\n    \"title\": \"General Fitness Yoga Camp\",\r\n    \"description\": \"A 3-day yoga camp to enhance overall fitness and well-being.\",\r\n    \"date\": 1695168000,\r\n    \"location\": \"Kolkata\",\r\n    \"price\": 350,\r\n    \"type\": \"Standalone\",\r\n    \"condition\": \"General Fitness\",\r\n    \"image\": \"https://cdn.midjourney.com/5d5f32ef-c40a-4258-9856-85db2f4f943a/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"fitness\",\r\n      \"yoga\",\r\n      \"camp\"\r\n    ],\r\n    \"duration\": 3\r\n  },\r\n  {\r\n    \"title\": \"Yoga Event 11\",\r\n    \"description\": \"A description for Yoga Event 11.\",\r\n    \"date\": 1723566880,\r\n    \"location\": \"Pune\",\r\n    \"price\": 704,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Chronic Pain Management\",\r\n    \"image\": \"https://cdn.midjourney.com/ec4680e8-d074-4a69-a24b-3d3f3946907b/0_2.jpeg\",\r\n    \"tag\": [\r\n      \"yoga\",\r\n      \"camp\",\r\n      \"weekend\"\r\n    ],\r\n    \"duration\": 10\r\n  },\r\n  {\r\n    \"title\": \"Yoga Event 12\",\r\n    \"description\": \"A description for Yoga Event 12.\",\r\n    \"date\": 1725678184,\r\n    \"location\": \"Chennai\",\r\n    \"price\": 376,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Chronic Pain Management\",\r\n    \"image\": \"https://cdn.midjourney.com/02d7f36d-ba93-4850-b555-3ede5a22eca8/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"diet\",\r\n      \"meditation\",\r\n      \"pain management\"\r\n    ],\r\n    \"duration\": 7\r\n  },\r\n  {\r\n    \"title\": \"Yoga Event 13\",\r\n    \"description\": \"A description for Yoga Event 13.\",\r\n    \"date\": 1734745782,\r\n    \"location\": \"Delhi\",\r\n    \"price\": 737,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Detox\",\r\n    \"image\": \"https://cdn.midjourney.com/6eb2d2b3-eb07-427a-89f1-b5ac2df1c8f1/0_2.jpeg\",\r\n    \"tag\": [\r\n      \"pain management\",\r\n      \"meditation\",\r\n      \"relaxation\"\r\n    ],\r\n    \"duration\": 4\r\n  },\r\n  {\r\n    \"title\": \"Yoga Event 14\",\r\n    \"description\": \"A description for Yoga Event 14.\",\r\n    \"date\": 1734056561,\r\n    \"location\": \"Chennai\",\r\n    \"price\": 107,\r\n    \"type\": \"Standalone\",\r\n    \"condition\": \"Mental Wellness\",\r\n    \"image\": \"https://cdn.midjourney.com/e6c8452a-af8e-4cd3-b15a-c3dcf2a696a5/0_3.jpeg\",\r\n    \"tag\": [\r\n      \"workshop\",\r\n      \"weight loss\",\r\n      \"meditation\"\r\n    ],\r\n    \"duration\": 7\r\n  },\r\n  {\r\n    \"title\": \"Yoga Event 15\",\r\n    \"description\": \"A description for Yoga Event 15.\",\r\n    \"date\": 1729939908,\r\n    \"location\": \"Rishikesh\",\r\n    \"price\": 882,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Detox\",\r\n    \"image\": \"https://cdn.midjourney.com/30ee2214-0810-4e17-aa5e-0c2edc1b4354/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"spiritual growth\",\r\n      \"diet\",\r\n      \"weekend\"\r\n    ],\r\n    \"duration\": 10\r\n  },\r\n  {\r\n    \"title\": \"Yoga Event 16\",\r\n    \"description\": \"A description for Yoga Event 16.\",\r\n    \"date\": 1725472451,\r\n    \"location\": \"Delhi\",\r\n    \"price\": 311,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Flexibility Improvement\",\r\n    \"image\": \"https://cdn.midjourney.com/2f9daef3-406b-4266-835e-a07fb09b4820/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"relaxation\",\r\n      \"spiritual growth\",\r\n      \"flexibility\"\r\n    ],\r\n    \"duration\": 3\r\n  },\r\n  {\r\n    \"title\": \"Yoga Event 17\",\r\n    \"description\": \"A description for Yoga Event 17.\",\r\n    \"date\": 1734972658,\r\n    \"location\": \"Goa\",\r\n    \"price\": 555,\r\n    \"type\": \"Standalone\",\r\n    \"condition\": \"Mental Wellness\",\r\n    \"image\": \"https://cdn.midjourney.com/2f72aafd-e2f2-4bec-8afc-80877aa4634f/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"yoga\",\r\n      \"camp\",\r\n      \"weekend\"\r\n    ],\r\n    \"duration\": 6\r\n  },\r\n  {\r\n    \"title\": \"Yoga Event 18\",\r\n    \"description\": \"A description for Yoga Event 18.\",\r\n    \"date\": 1727628942,\r\n    \"location\": \"Goa\",\r\n    \"price\": 414,\r\n    \"type\": \"Standalone\",\r\n    \"condition\": \"Stress Relief\",\r\n    \"image\": \"https://cdn.midjourney.com/873b60f7-f026-40f9-b2d7-184e981ee1f5/0_3.jpeg\",\r\n    \"tag\": [\r\n      \"weight loss\",\r\n      \"workshop\",\r\n      \"pain management\"\r\n    ],\r\n    \"duration\": 2\r\n  },\r\n  {\r\n    \"title\": \"Yoga Event 19\",\r\n    \"description\": \"A description for Yoga Event 19.\",\r\n    \"date\": 1732255454,\r\n    \"location\": \"Rishikesh\",\r\n    \"price\": 219,\r\n    \"type\": \"Standalone\",\r\n    \"condition\": \"Mental Wellness\",\r\n    \"image\": \"https://cdn.midjourney.com/e0dba42d-84bc-45e6-acca-bbaf8f817371/0_1.jpeg\",\r\n    \"tag\": [\r\n      \"diet\",\r\n      \"weekend\",\r\n      \"flexibility\"\r\n    ],\r\n    \"duration\": 7\r\n  },\r\n  {\r\n    \"title\": \"Yoga Event 20\",\r\n    \"description\": \"A description for Yoga Event 20.\",\r\n    \"date\": 1725581902,\r\n    \"location\": \"Varanasi\",\r\n    \"price\": 142,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Stress Relief\",\r\n    \"image\": \"https://cdn.midjourney.com/5d5f32ef-c40a-4258-9856-85db2f4f943a/0_0.jpeg\",\r\n    \"tag\": [\r\n      \"weight loss\",\r\n      \"camp\",\r\n      \"yoga\"\r\n    ],\r\n    \"duration\": 2\r\n  },\r\n  {\r\n    \"title\": \"Prachi Yoga  Event in pune Organised by usman please visit here\",\r\n    \"description\": \"when you will visit i'll tell the description.\",\r\n    \"date\": 1725581902,\r\n    \"location\": \"pune\",\r\n    \"price\": 101,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Stress Relief\",\r\n    \"image\": \"https://images.pexels.com/photos/802417/pexels-photo-802417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\",\r\n    \"tag\": [\r\n      \"weight loss\",\r\n      \"camp\",\r\n      \"yoga\"\r\n    ],\r\n    \"duration\": 3\r\n  },\r\n  {\r\n    \"title\": \"Prashant Yoga  Event in Agra Organised by vishal please visit here\",\r\n    \"description\": \"Organized by Vishal, this event invites you to experience the profound benefits of yoga in the beautiful city of Agra. Join us for a rejuvenating session that aims to harmonize mind, body, and spirit.\",\r\n    \"date\": 1723581502,\r\n    \"location\": \"Agra\",\r\n    \"price\": 101,\r\n    \"type\": \"Signature\",\r\n    \"condition\": \"Stress Relief\",\r\n    \"image\": \"https://images.pexels.com/photos/4078093/pexels-photo-4078093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\",\r\n    \"tag\": [\r\n      \"weight loss\",\r\n      \"camp\",\r\n      \"meditation\"\r\n    ],\r\n    \"duration\": 5\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://postgrae-asignment.vercel.app/booking_retreat/retreat/",
+					"protocol": "https",
+					"host": [
+						"postgrae-asignment",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"booking_retreat",
+						"retreat",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retreat_fetch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/booking_retreat/retreat/?title=General Fitness Yoga Camp&location=Kolkata&price=350&description=A 3-day yoga camp to enhance overall fitness and well-being.&date=1695168000&type=Standalone&condition=General Fitness&image=https://cdn.midjourney.com/5d5f32ef-c40a-4258-9856-85db2f4f943a/0_0.jpeg&tag=fitness&duration=3&page=2&limit=2&search=flexibility",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"booking_retreat",
+						"retreat",
+						""
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "General Fitness Yoga Camp"
+						},
+						{
+							"key": "location",
+							"value": "Kolkata"
+						},
+						{
+							"key": "price",
+							"value": "350"
+						},
+						{
+							"key": "description",
+							"value": "A 3-day yoga camp to enhance overall fitness and well-being."
+						},
+						{
+							"key": "date",
+							"value": "1695168000"
+						},
+						{
+							"key": "type",
+							"value": "Standalone"
+						},
+						{
+							"key": "condition",
+							"value": "General Fitness"
+						},
+						{
+							"key": "image",
+							"value": "https://cdn.midjourney.com/5d5f32ef-c40a-4258-9856-85db2f4f943a/0_0.jpeg"
+						},
+						{
+							"key": "tag",
+							"value": "fitness"
+						},
+						{
+							"key": "duration",
+							"value": "3"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "search",
+							"value": "flexibility"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test_route",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postgrae-asignment.vercel.app/booking_retreat/test",
+					"protocol": "https",
+					"host": [
+						"postgrae-asignment",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"booking_retreat",
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
