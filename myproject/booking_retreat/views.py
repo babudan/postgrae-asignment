@@ -5,42 +5,14 @@ from booking_retreat.validation import Validation ,ValidationException
 from sqlalchemy.exc import SQLAlchemyError
 import json
 from sqlalchemy import or_, and_
+from booking_retreat.utils import build_search_condition
 from django.db.models import Q
 from myproject.settings.base import DATA_UPLOAD_MAX_MEMORY_SIZE
 
 
 
-def build_search_condition(search):
-    search_condition_filter = []
-    valid_date = False
-    valid_duration = False
-    
-    try:
-        search_int = int(search)
-        search_condition_filter.append(Retreat.date == search_int)
-        valid_date = True
-    except ValueError:
-        pass
-    if not valid_date:
-        try:
-            search_int_duration = int(search)
-            search_condition_filter.append(Retreat.duration == search_int_duration)
-            valid_duration = True
-        except ValueError:
-            pass
-
-    # Always add string search conditions
-    search_condition_filter.extend([
-                    Retreat.title.ilike(f"%{search}%"),
-                    Retreat.location.ilike(f"%{search}%"),
-                    Retreat.description.ilike(f"%{search}%"),
-                    Retreat.price.ilike(f"%{search}%"),
-                    Retreat.type.ilike(f"%{search}%"),
-                    Retreat.condition.ilike(f"%{search}%"),
-                    Retreat.tag.any(search),
-    ])
-
-    return or_(*search_condition_filter) if search_condition_filter else None
+def test_view(request):
+    return JsonResponse({'message': 'This is a test route!'})
 
 class RetreatView(View):
     def __init__(self):
