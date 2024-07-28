@@ -8,4 +8,4 @@ urlpatterns = [
     path('test/', csrf_exempt(Testview.as_view()), name='testview'), 
     path('bookings/', csrf_exempt(Bookingview.as_view()), name='bookingview'),
     path('retreat/', csrf_exempt(RetreatView.as_view()), name='retreatview'),   
-]
+]  
