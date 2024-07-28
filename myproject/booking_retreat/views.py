@@ -10,12 +10,12 @@ from django.db.models import Q
 from myproject.settings import DATA_UPLOAD_MAX_MEMORY_SIZE
 
 
-# class Testview(View):
-#     def __init__(self):
-#         self.response = {}
+class Testview(View):
+    def __init__(self):
+        self.response = {}
         
-#     def get(self, request, *args, **kwargs):
-#         return JsonResponse({'message': 'This is a test route!'})
+    def get(self, request, *args, **kwargs):
+        return JsonResponse({'message': 'This is a test route!'})
 
 class RetreatView(View):
     def __init__(self):
