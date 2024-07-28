@@ -7,7 +7,7 @@ import json
 from sqlalchemy import or_, and_
 from booking_retreat.utils import build_search_condition
 from django.db.models import Q
-from myproject.settings.base import DATA_UPLOAD_MAX_MEMORY_SIZE
+from myproject.settings import DATA_UPLOAD_MAX_MEMORY_SIZE
 
 
 # class Testview(View):
